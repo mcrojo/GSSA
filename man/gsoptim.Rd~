@@ -18,7 +18,7 @@ gsoptim(g,int,e=1e-6)
 
 \details{
 \code{gsoptim} finds the minimum of a function in the given interval but does not ensure that is the global minimum.\cr
-\code{print()}, \code{summary()} and \code{plot()} methods are available.
+\code{show()}, \code{summary()} and \code{plot()} methods are available.
 }
 
 \value{

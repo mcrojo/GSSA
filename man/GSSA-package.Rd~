@@ -3,24 +3,24 @@
 \alias{GSSA}
 \docType{package}
 \title{
-Busqueda de la Seccion de Oro.
+Golden Search Section.
 }
 \description{
-El paquete encuentra mínimos de funciones mediante el algoritmo de la búsqueda de la sección de oro, entrega un summary y un plot del mínimo.
+Find the minimum of a function using the Golden Search Section algorithm.
 }
 \details{
 \tabular{ll}{
-Package: \tab OroPerro\cr
+Package: \tab GSS\cr
 Type: \tab Package\cr
 Version: \tab 1.0\cr
-Date: \tab 2012-05-01\cr
-License: \tab GPL (>= 3)\cr
+Date: \tab 2015-05-14\cr
+License: \tab GPL (>= 2)\cr
 LazyLoad: \tab yes\cr
 }
 }
 \author{
-Constanza Rojo Alfaro.
+Maria Constanza Rojo Alfaro.
 
-Maintainer: Constanza Rojo Alfaro <mcrojo@mat.puc.cl>
+Maintainer: Maria Constanza Rojo Alfaro <rojo@stat.wisc.edu>
 
 }

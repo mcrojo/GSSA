@@ -10,7 +10,7 @@
 \title{"gss" class methods}
 \usage{
 \S4method{plot}{gss}(x, y, ...)
-\S4method{show}{gss}(x)
+\S4method{show}{gss}(object)
 \S4method{summary}{gss}(object)
 }
 \arguments{

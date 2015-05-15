@@ -3,10 +3,6 @@
 \alias{plot,gss-method}
 \alias{show,gss-method}
 \alias{summary,gss-method}
-\alias{[,gss-method}
-\alias{[[,gss-method}
-\alias{[<-,gss-method}
-\alias{[[<-,gss-method}
 \title{"gss" class methods}
 \usage{
 \S4method{plot}{gss}(x, y, ...)
@@ -27,10 +23,6 @@ The package defines the following methods for the "gss" class:
   \item{\code{plot}}{Plot the function and its minimum.}
   \item{\code{show}}{Print out the minimum value of the function corresponding to the "min" slot of the "gss" class.}
   \item{\code{summary}}{Main results from the algorithm.}
-  \item{\code{[}}{ Extract part of the gss object.}
-  \item{\code{[[}}{ Extract part of the gss object.}
-\item{\code{[<-}}{Set value to the extract part of the gs osbject.}
-\item{\code{[[<-}}{Set value to the extract part of the gss object.}
 }
 
 }

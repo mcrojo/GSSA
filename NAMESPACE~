@@ -1,0 +1,5 @@
+export(gsoptim)
+exportMethods("plot")
+exportMethods("summary")
+exportMethods("show")
+

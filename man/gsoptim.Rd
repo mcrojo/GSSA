@@ -1,10 +1,10 @@
 \name{gsoptim}
 \alias{gsoptim}
 \title{
-Golden Search Section Algorithm.
+Golden Section Search Algorithm.
 }
 \description{
-Implements the "Golden Search Section Algorithm" to find the minimum of a function in a given interval.
+Implements the "Golden Section Search Algorithm" to find the minimum of a function in a given interval.
 }
 \usage{
 gsoptim(g,int,e=1e-6)
@@ -17,7 +17,7 @@ gsoptim(g,int,e=1e-6)
 }
 
 \details{
-\code{gsoptim} finds the minimum of a function in the given interval but does not ensure that is the global minimum.\cr
+\code{gsoptim} finds the minimum of a function \eqn{g(x)} in a given interval but does not ensure that is the global minimum.\cr
 \code{show()}, \code{summary()} and \code{plot()} methods are available.
 }
 
@@ -35,8 +35,9 @@ Maria Constanza Rojo Alfaro.
 
 \examples{
 library(GSSA)
-f<- function(x) x^2-4+x +3
+f<- function(x) x^2/2-2*x+3
 test<-gsoptim(f,c(-10,10),1e-12)
 slotNames(test)
 summary(test)
+plot(test)
 }

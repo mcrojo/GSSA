@@ -1,0 +1,34 @@
+---
+title: "brownianMotion: simulating 1 dimension or 2 dimension Brownian motion"
+output: rmarkdown::html_vignette
+author: Ye Zheng
+vignette: >
+  %\VignetteIndexEntry{simulating Brownian motion}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8](inputenc)
+---
+The package brownianMotion does the simulation for 1 dimension or 2 dimension Brownian motion and gives the corresponding plot for the simulation path.
+
+First, load the library.
+
+```{r loadlibrary}
+library(brownianMotion)
+```
+
+Simulate 1 dimension brownian motion.
+
+```{r simulate1d}
+x <- sim1dBM(10000, 1)
+```
+
+Simulate 2 dimension brownian motion.
+
+```{r simulate2d}
+x <- sim2dBM(10000, 1)
+```
+
+Plot the simulation path.
+
+```{r plot}
+plotBM(x)
+```

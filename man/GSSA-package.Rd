@@ -3,7 +3,7 @@
 \alias{GSSA}
 \docType{package}
 \title{
-Golden Search Section.
+Golden Section Search Algorithm.
 }
 \description{
 Find the minimum of a function using the Golden Search Section algorithm.

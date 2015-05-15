@@ -8,4 +8,5 @@ Maintainer: Maria Constanza Rojo Alfaro <rojo@stat.wisc.edu>
 Description: Find minimum of a function using the Golden Search Section Algorithm.
 License: GPL (>= 2)
 Depends: methods
+Suggests: testhat
 LazyLoad: yes
