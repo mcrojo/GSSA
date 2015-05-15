@@ -1,0 +1,53 @@
+gsoptimEst<-function(int,g,e=1e-6){
+alpha<-(3-sqrt(5))/2
+it<-0
+x1<-int[1]
+x3<-int[2]	
+while(abs(x3-x1)>e){
+	x0<-x1+alpha*(x3-x1)	
+	x2<-x3-alpha*(x3-x1)
+	if(g(x0)<g(x2)) x3<-x2 
+	else  x1<-x0 
+	it<-it+1	
+	}
+return(list(min=(x1+x3)/2,int=c(int[1],int[2]), it=it, g=g))
+}	
+
+gsoptim<-function(x, ...) UseMethod("gsoptim")
+
+gsoptim.default<-function(int,g,e=1e-6,...)
+{
+int<-as.vector(int)
+g<-as.function(g)
+e<-as.numeric(e)
+
+est<- gsoptimEst(int,g,e=1e-6,...)
+est$min<-est$min
+class(est) <- "gsoptim"
+est
+}
+
+print.gsoptim<- function(x, ...)
+{
+cat("Minimum:\n")
+print(x$min)
+}
+
+summary.gsoptim<- function(object, ...)
+{
+TAB <- cbind(Min = object$min,
+Lower_Interval = object$int[1],
+Upper_Interval = object$int[2],
+Iterations = object$it)
+res <- list(Golden_Section_Search=TAB)
+class(res) <- "summary.gsoptim"
+res
+}
+
+plot.gsoptim<- function(x,...)
+{
+g<-as.function(x$g)
+sequence<-seq(x$int[1],x$int[2], 1e-4)
+plot(sequence,g(sequence), type="l",main="Minimum by Golden Section Search", ylab=expression(g(x)), xlab=expression(x) )
+abline(h=g(x$min), lwd=2, col="red")
+}

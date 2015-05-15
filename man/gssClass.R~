@@ -1,0 +1,23 @@
+setClass("gss",representation=representation(
+                   min = "numeric",
+                   int = "vector",
+                   it = "numeric",
+                   g = "function",
+
+  )
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

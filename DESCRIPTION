@@ -1,0 +1,10 @@
+Package: GSSA
+Type: Package
+Title: Golden Search Section Algorithm.
+Version: 1.0
+Date: 2015-05-14
+Author: Maria Constanza Rojo Alfaro.
+Maintainer: Maria Constanza Rojo Alfaro <rojo@stat.wisc.edu>
+Description: Find minimum of a function using the Golden Search Section Algorithm.
+License: GPL (>= 2)
+LazyLoad: yes
