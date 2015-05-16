@@ -1,7 +1,7 @@
 ---
 title: "GSSA: Golden Section Search Algorithm"
 output: rmarkdown::html_vignette
-author: Maria Constanza Rojo Alfaro.
+author: Maria Constanza Rojo Alfaro
 vignette: >
   %\VignetteIndexEntry{Calculates minimum of a function}
   %\VignetteEngine{knitr::rmarkdown}
