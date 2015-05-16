@@ -14,7 +14,7 @@ First, load the library.
 ```{r load}
 library(GSSA)
 ```
-Next, you'ĺl have to defind the function that you want to minimize, for example:
+Next, you'll have to defind the function that you want to minimize, for example:
 
 ```{r function}
 f<- function(x) x^2/2-2*x+3
