@@ -1,2 +1,0 @@
-library(testhat)
-test_check("GSSA")
