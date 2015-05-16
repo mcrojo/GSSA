@@ -3,3 +3,4 @@ exportMethods("plot")
 exportMethods("summary")
 exportMethods("show")
 import(methods)
+

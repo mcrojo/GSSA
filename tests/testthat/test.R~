@@ -1,0 +1,4 @@
+context("Minimum in R1")
+test_that("Interval length and R1 function", {
+expect_equal(length(formals(g)),length(int)-1)
+})
